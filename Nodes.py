@@ -26,3 +26,5 @@ wackos_data=dot.get_link_node().get_value()
 
 print(dots_data)
 print(wackos_data)
+
+print(yacko.get_value())
