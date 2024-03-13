@@ -1,19 +1,13 @@
-import numpy as np
-
 
 class Bubble:
     def __init__(self, arr) :
         self.arr=arr
 
-    def show(self):
-        for i in range(len(self.arr)):
-            print(self.arr[i])
-
     def bubble_sort(self):
         flag=True
         while flag:
             flag=False
-            for i in range(1,len(self.arr)-1):
+            for i in range(1,len(self.arr)):
                 if self.arr[i-1]>self.arr[i]:
                     tempo=self.arr[i-1]
                     self.arr[i-1]=self.arr[i]
@@ -22,10 +16,9 @@ class Bubble:
         return self.arr
 
 
-
-
-
-a=[2,1,0,3,6,7]
+#a=[2,1,0,3,6,7]
+#a = [-3,-10, 100, 2, 1, 50, 0]
+a = [1, 8, 6, 2, 5, 4, 8, 3, 7]
+print(f'The original array is {a}')
 ps=Bubble(a)
-#ps.show()
-print(ps.bubble_sort())
+print(f'Using bubble sort algorithm: { ps.bubble_sort()}')
