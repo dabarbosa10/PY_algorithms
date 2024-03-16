@@ -20,6 +20,12 @@ class LinkedList:
     def get_head_node(self):
         return self.head_node
     
+
+    def insert_beginning(self, new_value):
+        new_node=Node(new_value)
+        new_node.set_next_node(self.head_node)
+        self.head_node=new_node
+    
     def stringify_list(self):
         string_list=''
         current_node = self.get_head_node()
@@ -30,6 +36,12 @@ class LinkedList:
         return string_list
 
 
-my_node=Node(44)
-print(my_node.get_value())
+#my_node=Node(44)
+#print(my_node.get_value())
+ll = LinkedList(5)
+ll.insert_beginning(70)
+ll.insert_beginning(5675)
+ll.insert_beginning(90)
+print(ll.stringify_list())
+
 
