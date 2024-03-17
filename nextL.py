@@ -1,0 +1,1 @@
+# Node stores data and a reference to the next node.
