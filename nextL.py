@@ -7,5 +7,14 @@ class Node:
 class Linked:
     def __init__(self,head=None):
         self.head=head
+    def insert_beginning(self, new_data):
+        new_node= Node(new_data)
+        new_node.next=self.head
+        self.head=new_data
+
+
+n1=Node("hola")
+print(n1.data)
+print(n1.next)
         
     
